@@ -45,10 +45,11 @@ require_once("../models/select/select-catcompte.php");
                 <form action="<?=$url?>" class="shadow p-3" method="POST">
                     <div class="row">
                         <div class="col-12 p-3">
-                            <label for="">Desingation <span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" name="desingation"
-                             placeholder="Entrez la description" <?php if(isset($_GET['idcatcmpt'])) {?> 
-                             values="<?php echo $donne['desingation']; ?> <?php } ?>">
+                        <label for="">Description <span class="text-danger">*</span></label>
+                            <input autocomplete="off" required type="text" class="form-control"
+                                placeholder="Ex: FAMILIAL" name="desingation"
+                                <?php if (isset($_GET['idcatcmpt'])) { ?>
+                                value="<?php echo $donne['desingation']; ?> <?php }?>">
                         </div>
                         <div class="col-12 p-3 ">
                             <input type="submit" class="btn btn-dark w-100" name="enregistrer" value="<?=$btn?>">
@@ -72,7 +73,7 @@ require_once("../models/select/select-catcompte.php");
                             while($tab=$getecat->fetch()){
                                 $n++;
                             
-                            ?>
+                            ?> <tr>
                             <th><?=$n;?></th>
                             <td><?=$tab['desingation']?></td>
                             <td>
@@ -81,6 +82,7 @@ require_once("../models/select/select-catcompte.php");
                                 <a onclick= "return confirm('Voulez-vous vraiment supprimer ces données?')"
                                 href="../models/delete/del-catcompte.php?idsup=<?=$tab['id']?>" class="btn btn-danger btn-sm "><i class="bi bi-trash3-fill"></i></a>
                             </td>
+                            </tr>
                             <?php
                                 }
                         ?>

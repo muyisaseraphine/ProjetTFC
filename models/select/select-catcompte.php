@@ -6,7 +6,7 @@ if(isset($_GET['idcatcmpt']))
     $getecatcmptmod->execute([$id]);
     $donne=$getecatcmptmod->fetch();
     
-    $url="../models/update/up-catcompte.php";
+    $url="../models/update/up-catcompte.php?idcatcmpt=$id";
     $btn="Modifier";
     $titre="Modifier la catégorie de Compte";
 }

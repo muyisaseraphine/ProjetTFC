@@ -3,7 +3,8 @@ include("../../connexion/connexion.php");
 if(isset($_POST['enregistrer']) && !empty($_GET['idcatcmpt']))
 {
     $id=$_GET['idcatcmpt'];
-    $insert=$connexion->prepare("UPDATE `categoriecompte` SET `desingation`=? WHERE id=$id ");
+    $desingation=htmlspecialchars($_POST['desingation']);
+    $insert=$connexion->prepare("UPDATE `categoriecompte` SET desingation=? WHERE id='$id' ");
     $resultat=$insert->execute([$desingation]);
 
     if($resultat==true)
