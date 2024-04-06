@@ -3,16 +3,16 @@ if(isset($_GET['idcatben']))
 {
     $id=$_GET['idcatben'];
     $getecatbenmod=$connexion->prepare("SELECT * FROM `categoriebenef` WHERE id=?");
-    $getecatbentmod->execute([$id]);
+    $getecatbenmod->execute([$id]);
     $donne=$getecatbenmod->fetch();
     
-    $url="../models/update/up-catcompte.php?idcatben=$id";
+    $url="../models/update/up-catmembre.php?idcatben=$id";
     $btn="Modifier";
     $titre="Modifier la catégorie de Beneficaire";
 }
 else
 {
-    $url="../models/add/add-catcompte.php";
+    $url="../models/add/add-catmembre.php";
     $btn="Ajouter";
     $titre="Ajouter la catégorie de Beneficaire";
 }

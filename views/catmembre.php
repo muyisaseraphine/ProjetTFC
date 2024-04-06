@@ -15,7 +15,7 @@ require_once("../models/select/select-catmembre.php");
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <?php require_once('style.php'); ?>
+    <?php require_once ('style.php'); ?>
 
 </head>
 
@@ -77,9 +77,9 @@ require_once("../models/select/select-catmembre.php");
                             <td><?=$tab['desingation']?></td>
                             <td>
                                 <a href="catmembre.php?idcatben=<?=$tab['id']?>" class="btn btn-dark btn-sm ">
-                                <i class="bi bi-pencil-square"></i></a>
-                                <a onclick= "return confirm('Voulez-vous vraiment supprimer ces données?')"
-                                href="../models/delete/del-catmembre.php?idsup=<?=$tab['id']?>" class="btn btn-danger btn-sm "><i class="bi bi-trash3-fill"></i></a>
+                                <i class="bi bi-pencil-square"></i>
+                                <a onclick= "return confirm('Voulez-vous vraiment supprimer ces données?')">
+                                <a href="../models/delete/del-catmembre.php?idsup=<?=$tab['id']?>" class="btn btn-danger btn-sm "><i class="bi bi-trash3-fill"></i></a>
                             </td>
                             </tr>
                             <?php

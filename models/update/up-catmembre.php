@@ -10,7 +10,7 @@ if(isset($_POST['enregistrer']) && !empty($_GET['idcatben']))
     if($resultat==true)
     {
         $_SESSION['sms']=" Modification réussie";
-        header("location:../../views/catmebre.php");
+        header("location:../../views/catmembre.php");
     }
     else
     {
