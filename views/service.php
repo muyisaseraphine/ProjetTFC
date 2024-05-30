@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Services</title>
+    <title>Service</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -16,55 +16,58 @@
 <body>
 
     <!-- Appel de menues  -->
-    <?php require_once('aside.php') ?>
+    <?php require_once ('aside.php') ?>
 
-    <main id="main" class="main">
+<div id="colorlib-main">
+    <div class="container">
         <div class="row">
             <div class="col-12">
-                <h4>services</h4>
+                <h4>Service</h4>
             </div>
             <!-- pour afficher les massage  -->
-            <div class="alert-info alert text-center">Message</div>
-            <!-- Le form qui enregistrer les données  -->
-            <div class="col-xl-12 ">
+           
+            <div class="col-xl-12 col-lg-12 col-md-6">
+                <p class="  alert-info alert text-center ">
+                    Message
+                </p>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
                 <form action="" class="shadow p-3">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Description <span class="text-danger">*</span></label>
+                        <div class="col-12 p-3">
+                            <label for="">Designation <span class="text-danger">*</span></label>
                             <input required type="text" class="form-control" placeholder="Entrez la description">
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Plafond<span class="text-danger">*</span></label>
-                            <select required name="" id="" class="form-select">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                        <label for="">Part de la Musosa <span class="text-danger">*</span></label>
+                        
+                        <div class="col-12 p-3">
+                        <label for="">Tarif Plafond<span class="text-danger">*</span></label>
                             <input required type="text" class="form-control" placeholder="Entrez la description">
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 mt-4 col-sm-6 p-3 ">
+                        <div class="col-12 p-3">
+                        <label for="">Part Musosa<span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-12 p-3 ">
                             <input type="submit" class="btn btn-dark w-100" value="Enregistrer">
                         </div>
                     </div>
                 </form>
             </div>
             <!-- La table qui affiche les données  -->
-            <div class="col-xl-12 table-responsive px-3 mt-3">
+            <div class="col-xl-8 col-lg-8 col-md-6 table-responsive px-3">
                 <table class="table table-sm text-center shadow">
                     <thead>
                         <tr>
                             <th>N°</th>
-                            <th>Service</th>
-                            <th>Plafond</th>
-                            <th>PartMusosa</th>
+                            <th>Designation</th>
+                            <th>Tarif Plafond</th>
+                            <th>Part Musosa</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <th>1</th>
-                        <td>Donnee</td>
                         <td>Donnee</td>
                         <td>Donnee</td>
                         <td>Donnee</td>
@@ -76,7 +79,9 @@
                 </table>
             </div>
         </div>
-    </main><!-- End #main -->
+       
+    </div>
+</div>
     <?php require_once('script.php') ?>
 
 </body>

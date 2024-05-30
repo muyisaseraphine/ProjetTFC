@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Comptes</title>
+    <title>Episode</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -16,63 +16,66 @@
 <body>
 
     <!-- Appel de menues  -->
-    <?php require_once('aside.php') ?>
+    <?php require_once ('aside.php') ?>
 
-    <main id="main" class="main">
+<div id="colorlib-main">
+    <div class="container">
         <div class="row">
             <div class="col-12">
-                <h4>Comptes</h4>
+                <h4>Episode</h4>
             </div>
             <!-- pour afficher les massage  -->
-            <div class="alert-info alert text-center">Message</div>
-            <!-- Le form qui enregistrer les données  -->
+           
+            <div class="col-xl-12 col-lg-12 col-md-6">
+                <p class="  alert-info alert text-center ">
+                    Message
+                </p>
+
+            </div>
             <div class="col-xl-12 ">
                 <form action="" class="shadow p-3">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Bon<span class="text-danger">*</span></label>
+                            <label for="">Nom <span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                        <label for="">Postnom <span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Genre <span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Date de naissance <span class="text-danger">*</span></label>
+                            <input required type="date" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Typologie<span class="text-danger">*</span></label>
                             <select required name="" id="" class="form-select">
                                 <option value="">1</option>
                                 <option value="">2</option>
                             </select>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Service<span class="text-danger">*</span></label>
+                            <label for="">Etat Civil<span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Matricule<span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Lien<span class="text-danger">*</span></label>
+                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
+                            <label for="">Coorporation<span class="text-danger">*</span></label>
                             <select required name="" id="" class="form-select">
                                 <option value="">1</option>
                                 <option value="">2</option>
                             </select>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Periode<span class="text-danger">*</span></label>
-                            <select required name="" id="" class="form-select">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                        <label for="">Num Fcature<span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Sejour <span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Part Beneficiaire<span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                        <label for="">Part Musosa <span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Date Entrer <span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 p-3">
-                            <label for="">Date Sortie<span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 mt-4 col-sm-6 p-3 ">
                             <input type="submit" class="btn btn-dark w-100" value="Enregistrer">
@@ -86,21 +89,17 @@
                     <thead>
                         <tr>
                             <th>N°</th>
-                            <th>Bon</th>
-                            <th>Service</th>
-                            <th>Periode</th>
-                            <th>Sejour</th>
-                            <th>Part Beneficiaire</th>
-                            <th>Part Musosa</th>
-                            <th>Date Entrer</th>
-                            <th>Date Sortie</th>
+                            <th>Nom</th>
+                            <th>Postnom</th>
+                            <th>Prenom</th>
+                            <th>Mot de Passe</th>
+                            <th>Profil</th>
+                            <th>Fonction</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <th>1</th>
-                        <td>Donnee</td>
-                        <td>Donnee</td>
                         <td>Donnee</td>
                         <td>Donnee</td>
                         <td>Donnee</td>
@@ -114,8 +113,9 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </main><!-- End #main -->
+       
+    </div>
+</div>
     <?php require_once('script.php') ?>
 
 </body>
