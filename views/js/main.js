@@ -1,191 +1,146 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
+(function ($) {
+ "use strict";
 
-(function($) {
-
-	"use strict";
-
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
-
-
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+		$(".chosen")[0] && $(".chosen").chosen({
+            width: "100%",
+            allow_single_deselect: !0
+        });
+		/*--------------------------
+		 auto-size Active Class
+		---------------------------- */	
+		$(".auto-size")[0] && autosize($(".auto-size"));
+		/*--------------------------
+		 Collapse Accordion Active Class
+		---------------------------- */	
+		$(".collapse")[0] && ($(".collapse").on("show.bs.collapse", function(e) {
+            $(this).closest(".panel").find(".panel-heading").addClass("active")
+        }), $(".collapse").on("hide.bs.collapse", function(e) {
+            $(this).closest(".panel").find(".panel-heading").removeClass("active")
+        }), $(".collapse.in").each(function() {
+            $(this).closest(".panel").find(".panel-heading").addClass("active")
+        }));
+		/*----------------------------
+		 jQuery tooltip
+		------------------------------ */
+		$('[data-toggle="tooltip"]').tooltip();
+		/*--------------------------
+		 popover
+		---------------------------- */	
+		$('[data-toggle="popover"]')[0] && $('[data-toggle="popover"]').popover();
+		/*--------------------------
+		 File Download
+		---------------------------- */	
+		$('.btn.dw-al-ft').on('click', function(e) {
+			e.preventDefault();
 		});
-
-	};
-	fullHeight();
-
-	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
-
-	// Scrollax
-   $.Scrollax();
-
-
-   var burgerMenu = function() {
-
-		$('.js-colorlib-nav-toggle').on('click', function(event){
-			event.preventDefault();
-			var $this = $(this);
-
-			if ($('body').hasClass('offcanvas')) {
-				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
-			} else {
-				$this.addClass('active');
-				$('body').addClass('offcanvas');	
-			}
+		/*--------------------------
+		 Sidebar Left
+		---------------------------- */	
+		$('#sidebarCollapse').on('click', function () {
+			 $('#sidebar').toggleClass('active');
+			 
+		 });
+		$('#sidebarCollapse').on('click', function () {
+			$("body").toggleClass("mini-navbar");
+			SmoothlyMenu();
 		});
-	};
-	burgerMenu();
-
-	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
-
-		$(document).click(function (e) {
-	    var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
+		$('.menu-switcher-pro').on('click', function () {
+			var button = $(this).find('i.nk-indicator');
+			button.toggleClass('notika-menu-befores').toggleClass('notika-menu-after');
 			
-	    	}
-	    	
-	    }
 		});
-
-		$(window).scroll(function(){
-			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	    	}
+		$('.menu-switcher-pro.fullscreenbtn').on('click', function () {
+			var button = $(this).find('i.nk-indicator');
+			button.toggleClass('notika-back').toggleClass('notika-next-pro');
 		});
-
-	};
-	mobileMenuOutsideClick();
-
-	var carousel = function() {
-		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
+		/*--------------------------
+		 Button BTN Left
+		---------------------------- */	
+		
+		$(".nk-int-st")[0] && ($("body").on("focus", ".nk-int-st .form-control", function() {
+            $(this).closest(".nk-int-st").addClass("nk-toggled")
+        }), $("body").on("blur", ".form-control", function() {
+            var p = $(this).closest(".form-group, .input-group"),
+                i = p.find(".form-control").val();
+            p.hasClass("fg-float") ? 0 == i.length && $(this).closest(".nk-int-st").removeClass("nk-toggled") : $(this).closest(".nk-int-st").removeClass("nk-toggled")
+        })), $(".fg-float")[0] && $(".fg-float .form-control").each(function() {
+            var i = $(this).val();
+            0 == !i.length && $(this).closest(".nk-int-st").addClass("nk-toggled")
+        });
+		/*--------------------------
+		 mCustomScrollbar
+		---------------------------- */	
+		$(window).on("load",function(){
+			$(".widgets-chat-scrollbar").mCustomScrollbar({
+				setHeight:460,
+				autoHideScrollbar: true,
+				scrollbarPosition: "outside",
+				theme:"light-1"
+			});
+			$(".notika-todo-scrollbar").mCustomScrollbar({
+				setHeight:445,
+				autoHideScrollbar: true,
+				scrollbarPosition: "outside",
+				theme:"light-1"
+			});
+			$(".comment-scrollbar").mCustomScrollbar({
+				autoHideScrollbar: true,
+				scrollbarPosition: "outside",
+				theme:"light-1"
+			});
 		});
-
-	};
-	carousel();
-
+	/*----------------------------
+	 jQuery MeanMenu
+	------------------------------ */
+	jQuery('nav#dropdown').meanmenu();
 	
+	/*----------------------------
+	 wow js active
+	------------------------------ */
+	 new WOW().init();
+	 
+	/*----------------------------
+	 owl active
+	------------------------------ */  
+	$("#owl-demo").owlCarousel({
+      autoPlay: false, 
+	  slideSpeed:2000,
+	  pagination:false,
+	  navigation:true,	  
+      items : 4,
+	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+	  navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      itemsDesktop : [1199,4],
+	  itemsDesktopSmall : [980,3],
+	  itemsTablet: [768,2],
+	  itemsMobile : [479,1],
+	});
 
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.ftco-animate').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .ftco-animate.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn ftco-animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft ftco-animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight ftco-animated');
-							} else {
-								el.addClass('fadeInUp ftco-animated');
-							}
-							el.removeClass('item-animate');
-						},  k * 50, 'easeInOutExpo' );
-					});
-					
-				}, 100);
-				
-			}
-
-		} , { offset: '95%' } );
-	};
-	contentWayPoint();
-
-
-	// magnific popup
-	$('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
-  });
-
-
-
-
-})(jQuery);
-
+	/*----------------------------
+	 price-slider active
+	------------------------------ */  
+	  $( "#slider-range" ).slider({
+	   range: true,
+	   min: 40,
+	   max: 600,
+	   values: [ 60, 570 ],
+	   slide: function( event, ui ) {
+		$( "#amount" ).val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+	   }
+	  });
+	  $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
+	   " - £" + $( "#slider-range" ).slider( "values", 1 ) );  
+	   
+	/*--------------------------
+	 scrollUp
+	---------------------------- */	
+	$.scrollUp({
+        scrollText: '<i class="fa fa-angle-up"></i>',
+        easingType: 'linear',
+        scrollSpeed: 900,
+        animation: 'fade'
+    }); 	   
+	
+	
+ 
+})(jQuery); 

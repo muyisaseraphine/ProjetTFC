@@ -1,89 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Service</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <?php require_once('style.php'); ?>
-
-</head>
+<?php require_once ('style.php') ?>
 
 <body>
-
-    <!-- Appel de menues  -->
     <?php require_once ('aside.php') ?>
 
-<div id="colorlib-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h4>Service</h4>
-            </div>
-            <!-- pour afficher les massage  -->
-           
-            <div class="col-xl-12 col-lg-12 col-md-6">
-                <p class="  alert-info alert text-center ">
-                    Message
-                </p>
-
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <form action="" class="shadow p-3">
-                    <div class="row">
-                        <div class="col-12 p-3">
-                            <label for="">Designation <span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
+    <div class="breadcomb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-example-wrap mg-t-30">
+                        <div class="cmp-tb-hd cmp-int-hd">
+                            <h2>Services</h2>
                         </div>
-                        
-                        <div class="col-12 p-3">
-                        <label for="">Tarif Plafond<span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        <div class="form-example-int form-horizental">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Désignation</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="nk-int-st">
+                                            <input type="text" class="form-control input-sm" placeholder="Enter la designation">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 p-3">
-                        <label for="">Part Musosa<span class="text-danger">*</span></label>
-                            <input required type="text" class="form-control" placeholder="Entrez la description">
+                        <div class="form-example-int form-horizental mg-t-15">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Tarif Plafond</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="nk-int-st">
+                                            <input type="text" class="form-control input-sm" placeholder="Entrer le tarif plafond">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 p-3 ">
-                            <input type="submit" class="btn btn-dark w-100" value="Enregistrer">
+                        <div class="form-example-int form-horizental mg-t-15">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm">Part Musosa</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="nk-int-st">
+                                            <input type="text" class="form-control input-sm" placeholder="Entrer le montant à payer par Musosa">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-example-int mg-t-15">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                    <button class="btn btn-success notika-btn-success">Enregistrer</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <!-- La table qui affiche les données  -->
-            <div class="col-xl-8 col-lg-8 col-md-6 table-responsive px-3">
-                <table class="table table-sm text-center shadow">
-                    <thead>
-                        <tr>
-                            <th>N°</th>
-                            <th>Designation</th>
-                            <th>Tarif Plafond</th>
-                            <th>Part Musosa</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <th>1</th>
-                        <td>Donnee</td>
-                        <td>Donnee</td>
-                        <td>Donnee</td>
-                        <td>
-                            <a href="" class="btn btn-dark btn-sm "><i class="bi bi-pencil-square"></i></a>
-                            <a href="" class="btn btn-danger btn-sm "><i class="bi bi-trash3-fill"></i></a>
-                        </td>
-                    </tbody>
-                </table>
+                </div>
             </div>
         </div>
-       
     </div>
-</div>
-    <?php require_once('script.php') ?>
+    <!-- Breadcomb area End-->
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Affichage de données</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Num</th>
+                                        <th>Service</th>
+                                        <th>Tarif Plafond</th>
+                                        <th>Part Musosa</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Chirurgie</td>
+                                        <td>200$</td>
+                                        <td>160$</td>
+                                        <td>
+                                            <button
+                                                class="btn btn-success success-icon-notika btn-reco-mg btn-button-mg">
+                                                <i class="notika-icon notika-next"></i>
+                                            </button>
+                                            <button class="btn btn-danger danger-icon-notika btn-reco-mg btn-button-mg">
+                                                <i class="notika-icon notika-close"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 
+    <?php require_once ('script.php') ?>
 </body>
 
 </html>

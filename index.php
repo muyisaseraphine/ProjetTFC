@@ -144,42 +144,125 @@
       <div class="container">
         <div class="row" data-aos="fade-up">
           <div class="col-md-12">
-            <h3 class="section-title">Our Services</h3>
+            <h3 class="section-title">Nos Services</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
           </div>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-            <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h5 class="service-title"><a href="">Objectis</a></h5>
+            <p class="service-description">
+            La MUSOSA Butembo-Beni a pour objectif de faciliter l'accès aux soins de santé de qualité 
+            à ses membres grace à des cotisations solidaires et reguilières. Reduire les inégalités en 
+            matière de santé en termes d'accessibilité économique aux soin et services de santé.
+            Elle est une association sans but lucratif, apolitique et offre ses services à tous les bénéficiaires sans discrimination
+            raciale,religieuse,tribale,....
+
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-            <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h5 class="service-title"><a href="">Produits de la MUSOSA</a></h5>
+            <p class="service-description">
+              <ul>
+                Musosa supporte 80% du total de la facture des soins de ses membres malades
+                <li>
+                  En ambulatoire (consultation, examen de laboratoire et médicaments)
+                </li>
+                <li>
+                  En consultation orénatale (y compris un examen d'échographie)si les deux époux sont en ordre de paiement de leurs cotisations
+                </li>
+                <li>
+                  En hospitalisation: médecine interne, pédiatrie et chirurgie
+                </li>
+                <li>
+                  En consultation ophlalmologique
+                </li>
+                <li>
+                  En gynécologie et en maternité (tous les accouchements eutociques et césariennes) si les deux époux sont en 
+                  ordre de paiement de leurs cotisations
+                </li>
+              </ul>
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h5 class="service-title"><a href="">Pris en charge de la MUSOSA</a></h5>
+            <p class="service-description">
+             <ul>
+              Musosa effectue un controle des soins de ses membres par des médecins conseils
+              <li>
+                Six épisodes maladies dont trois en ambulatoire et trois en hospitalisation par an (un épisode maladie compte au 
+                plus 14 jours en hospitalisation au plus 15 jous en ambulatoire et 5 jours aux soins intensifs)
+              </li>
+              A chaque épisode maladie il faut retirer le bon des soins au bureau de la Musosa Butembo-Beni et en dehords de Butembo
+              et de Beni, le mutualiste présente sa carte de membre pour accéder aux soins
+              <li>
+                Les médicaments spécialisés moyenants le controle du médecin conseil
+              </li>
+              NB: La période d'attente est de trois mois pour les nouveaux et pour les anciens membres qui viennent de passer une année
+              et plus sans renouveler leurs cotisations
+             </ul>
+             
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-            <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h5 class="service-title"><a href="">Visions de la Musosa</a></h5>
+            <p class="service-description">
+              Elle va s'etendre progressivement sur toutr l'entendue du Diocèse de Butembo-Beni 
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-            <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <h5 class="service-title"><a href="">Limites de la Musosa</a></h5>
+            <p class="service-description">
+              <ul>
+                <li>
+                  Prothèse lunetterie, orthopédie-traumatologir, cardiologie, kinésithérapie, Goitre, Chimiothérapie, 
+                  Chrirurgie esthétique, chirurgie ophtamologique, mastectomie, prostatectomie, hysteropingographie, radiographiers barytées
+                  radiothérapie, colostomie, ostéosynthèse, imagerié spécialisée documents officiels délivrés par l'hopital ordonnances, Check unpack
+                  (Examens à la volonté du patient), examens prénuptiaux
+                </li>
+                <li>
+                  Tous les examens para cliniques à visée ophtamologique, cultures antibiogramme
+                </li>
+                <li>
+                  Chambre privée
+                </li>
+                <li>
+                  Soins dans une structure non partenaire de la Musosa Butembo-Beni
+                </li>
+              </ul>
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <h5 class="service-title"><a href="">Conditions d'adhesion</a></h5>
+            <p class="service-description">
+              <ul>
+                <li>
+                  Entre animé d'un esprit d'entraide et de solidarité
+                </li>
+                <li>
+                  Respecter l'adhesion familiale qui veut dire faire adherer tous les membres de la famille en commençant par papa,maman et les enfants
+                  y compris toutes les personnes en charge et non faire adherer seulement un membre qu'on identifie comme malade en famille.
+                  En cas d'incapacité payer au minimum pour 3 personnes
+                </li>
+                NB: Celui qui a payer seul ou deux seulement recevront le bon de soin à partie du mois d'Avril
+                <li>
+                  Réguraliser ses cotisations annuelles dans l'intervalle prévu
+                </li>
+                <li>
+                  payer la cotisation du nouveau-né dès la sortie de la maternité 
+                </li>
+                <li>
+                  Payer l'uniforme de la Musosa, participer à l'Assemblée générale et etre sensibilisateur
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
