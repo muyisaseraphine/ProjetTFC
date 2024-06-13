@@ -8,66 +8,71 @@
 
     <div class="breadcomb-area">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-example-wrap mg-t-30">
-                        <div class="cmp-tb-hd cmp-int-hd">
-                            <h2>Services</h2>
-                        </div>
-                        <div class="form-example-int form-horizental">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                        <label class="hrzn-fm">Désignation</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Enter la designation">
+            <form action="" method="POST">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-example-wrap mg-t-30">
+                            <div class="cmp-tb-hd cmp-int-hd">
+                                <h2>Services</h2>
+                            </div>
+                            <div class="form-example-int form-horizental">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                            <label class="hrzn-fm">Désignation</label>
+                                        </div>
+                                        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                            <div class="nk-int-st">
+                                                <input type="text" class="form-control input-sm"
+                                                    placeholder="Enter la designation">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-example-int form-horizental mg-t-15">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                        <label class="hrzn-fm">Tarif Plafond</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Entrer le tarif plafond">
+                            <div class="form-example-int form-horizental mg-t-15">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                            <label class="hrzn-fm">Tarif Plafond</label>
+                                        </div>
+                                        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                            <div class="nk-int-st">
+                                                <input type="text" class="form-control input-sm"
+                                                    placeholder="Entrer le tarif plafond">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-example-int form-horizental mg-t-15">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                        <label class="hrzn-fm">Part Musosa</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="nk-int-st">
-                                            <input type="text" class="form-control input-sm" placeholder="Entrer le montant à payer par Musosa">
+                            <div class="form-example-int form-horizental mg-t-15">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                            <label class="hrzn-fm">Part Musosa</label>
+                                        </div>
+                                        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                            <div class="nk-int-st">
+                                                <input type="text" class="form-control input-sm"
+                                                    placeholder="Entrer le montant à payer par Musosa">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-example-int mg-t-15">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                </div>
-                                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                    <button class="btn btn-success notika-btn-success">Enregistrer</button>
+                            <div class="form-example-int mg-t-15">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <button class="btn btn-success notika-btn-success">Enregistrer</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <!-- Breadcomb area End-->

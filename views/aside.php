@@ -99,7 +99,7 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="bon.php">Bon de soins</a>
                                 </li>
-                                <li><a href="episode.php">Episades</a>
+                                <li><a href="episode.php">Episodes</a>
                                 </li>
                                 </li>
                             </ul>
